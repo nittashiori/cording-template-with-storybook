@@ -1,0 +1,25 @@
+.p-about {
+  h1 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  em {
+    margin: 0 4px;
+    padding: 0 4px;
+    background: var(--color-coral-0);
+    border-radius: 4px;
+  }
+
+  header {
+    padding: 20px;
+    border-bottom: 1px solid var(--color-coral-0);
+  }
+
+  footer {
+    min-height: 100%;
+    padding: 40px 20px;
+    background: var(--color-coral-0);
+  }
+}

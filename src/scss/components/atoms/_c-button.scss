@@ -9,10 +9,6 @@
   border-radius: 7px;
   position: relative;
 
-  @media (min-width: 768px) and (max-width: 1400px) {
-    font-size: clamp(0.875rem, 0.571rem + 0.63vw, 1.125rem);
-  }
-
   @media (max-width: 768px) {
     padding: 15px;
     font-size: 1.4rem;

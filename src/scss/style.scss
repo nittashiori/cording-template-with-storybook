@@ -3,7 +3,7 @@
 @import "base/_vars";
 @import "base/_base";
 
-@import "layout/l-sidenav";
+@import "layout/l-main";
 
 @import "components/atoms/c-br";
 @import "components/atoms/c-button";
@@ -12,3 +12,4 @@
 @import "components/atoms/c-text";
 
 @import "pages/p-top";
+@import "pages/p-about";
