@@ -1,6 +1,10 @@
 # Cording Template
 
-このリポジトリは、Storybookを使用した、シンプルなHTMLコーディングテンプレートです。
+このリポジトリは、Storybookを使用したプレーンなHTMLコーディングのテンプレートです。
+
+![プレビューイメージ](readme_image1.png)
+![Storybookイメージ](readme_image2.png)
+
 
 ## 開発環境構築
 
