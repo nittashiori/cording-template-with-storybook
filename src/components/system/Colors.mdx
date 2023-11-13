@@ -1,0 +1,77 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="System/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="primitive.greyscale"
+    subtitle="Primitive of the greyscale"
+    colors={{
+      0: '#FFFFFF',
+      100: '#e6e6e6',
+      200: '#cccccc',
+      300: '#b3b3b3',
+      400: '#999999',
+      500: '#808080',
+      600: '#666666',
+      700: '#4d4d4d',
+      800: '#333333',
+      900: '#1a1a1a'
+    }}
+  />
+  <ColorItem
+    title="primitive.black.alpha"
+    subtitle="Primitive of the black"
+    colors={{
+      10: 'rgba(0, 0, 0, 0.1)',
+      20: 'rgba(0, 0, 0, 0.2)',
+      30: 'rgba(0, 0, 0, 0.3)',
+      40: 'rgba(0, 0, 0, 0.4)',
+      50: 'rgba(0, 0, 0, 0.5)',
+      60: 'rgba(0, 0, 0, 0.6)',
+      70: 'rgba(0, 0, 0, 0.7)',
+      80: 'rgba(0, 0, 0, 0.8)',
+      90: 'rgba(0, 0, 0, 0.9)',
+      100: 'rgba(0, 0, 0, 1)',
+    }}
+  />
+  <ColorItem
+    title="primitive.coral"
+    subtitle="Primitive of the Coral"
+    colors={{
+      0: '#ffe0ea',
+      100: '#ffadc9',
+      200: '#ff7aa7',
+      300: '#ff4785',
+      400: '#ff1463',
+      500: '#e0004b',
+      600: '#ad003a'
+    }}
+  />
+  <ColorItem 
+    title="semantic.color.primary" 
+    subtitle="Coral" 
+    colors={{
+      Default: '#ff4785',
+      Hover: '#e0004b'
+    }} 
+  />
+  <ColorItem
+    title="semantic.color.text"
+    colors={{
+      greyscale900: '#111111',
+    }}
+  />
+  <ColorItem
+    title="semantic.color.disabled"
+    colors={{
+      greyscale100: '#e6e6e6',
+    }}
+  />
+  <ColorItem
+    title="semantic.color.alert"
+    colors={{
+      coral600: '#ad003a',
+    }}
+  />
+</ColorPalette>

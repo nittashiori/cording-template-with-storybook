@@ -1,0 +1,18 @@
+html {
+  font-size: var(--font-standard-size);
+  scroll-behavior: smooth;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-standard-size);
+  }
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: 1.6rem;
+  color: var(--color-text);
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  border-top-width: 1px;
+  box-sizing: content-box; /* 1 */
+  clear: both;
+  color: inherit;
+  height: 0; /* 1 */
+  margin: 0;
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  vertical-align: middle;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+:root {
+  /**-- Color --*/
+  --color-greyscale-0: #ffffff;
+  --color-greyscale-100: #e6e6e6;
+  --color-greyscale-200: #cccccc;
+  --color-greyscale-300: #b3b3b3;
+  --color-greyscale-400: #999999;
+  --color-greyscale-500: #808080;
+  --color-greyscale-600: #666666;
+  --color-greyscale-700: #4d4d4d;
+  --color-greyscale-800: #333333;
+  --color-greyscale-900: #1a1a1a;
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1);
+  --color-black-alpha-20: rgba(0, 0, 0, 0.2);
+  --color-black-alpha-30: rgba(0, 0, 0, 0.3);
+  --color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
+  --color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --color-black-alpha-70: rgba(0, 0, 0, 0.7);
+  --color-black-alpha-80: rgba(0, 0, 0, 0.8);
+  --color-black-alpha-90: rgba(0, 0, 0, 0.9);
+  --color-black-alpha-100: rgba(0, 0, 0, 1);
+  --color-coral-0: #ffe0ea;
+  --color-coral-100: #ffadc9;
+  --color-coral-200: #ff7aa7;
+  --color-coral-300: #ff4785;
+  --color-coral-400: #ff1463;
+  --color-coral-500: #e0004b;
+  --color-coral-600: #ad003a;
+  --color-primary: var(--color-coral-300);
+  --color-primary-hover: var(--color-coral-500);
+  --color-white: var(--color-greyscale-0);
+  --color-text: var(--color-greyscale-900);
+  /**-- Font --*/
+  --font-standard-size: 62.5%;
+  --font-family-default: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  /**-- Breakpoints --*/
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1400px;
+  /**-- Transition --*/
+  --transition-default: all 0.3s ease;
+  /**-- Force Element --*/
+  --focus: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/*-- Noto Sans JP --*/
+@font-face {
+  src: url("../webfont/NotoSansJP-Regular.woff2") format("woff2");
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../webfont/NotoSansJP-Medium.woff2") format("woff2");
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../webfont/NotoSansJP-SemiBold.woff2") format("woff2");
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../webfont/NotoSansJP-Bold.woff2") format("woff2");
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: var(--font-standard-size);
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: var(--font-standard-size);
+  }
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: 1.6rem;
+  color: var(--color-text);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+
+.c-br {
+  display: block;
+}
+.c-br--pc {
+  display: block;
+}
+@media (max-width: 768px) {
+  .c-br--pc {
+    display: inline;
+  }
+}
+.c-br--sp {
+  display: inline;
+}
+@media (max-width: 768px) {
+  .c-br--sp {
+    display: block;
+  }
+}
+
+.c-button {
+  display: inline-block;
+  padding: 17px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 7px;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  .c-button {
+    font-size: clamp(0.875rem, 0.571rem + 0.63vw, 1.125rem);
+  }
+}
+@media (max-width: 768px) {
+  .c-button {
+    padding: 15px;
+    font-size: 1.4rem;
+  }
+}
+.c-button svg {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+.c-button:hover, .c-button:active {
+  background-color: var(--color-primary-hover);
+  border: 1px solid var(--color-primary-hover);
+}
+.c-button:focus {
+  box-shadow: var(--focus);
+}
+
+.c-image {
+  max-width: 100%;
+  height: auto;
+}
+.c-image--fill {
+  width: 100%;
+}
+
+.c-skeleton {
+  opacity: 0.7;
+  animation: 0.8s linear 0s infinite alternate none running blink;
+  min-height: 1em;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.c-skeleton * {
+  visibility: hidden;
+}
+
+@keyframes blink {
+  from {
+    background-color: #A5A8A8;
+  }
+  to {
+    background-color: #f2f2f2;
+  }
+}
+.c-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #111111;
+}
+@media (max-width: 768px) {
+  .c-text {
+    font-size: 1.3rem;
+  }
+}
+.c-text--align-center {
+  text-align: center;
+}
+.c-text--align-right {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

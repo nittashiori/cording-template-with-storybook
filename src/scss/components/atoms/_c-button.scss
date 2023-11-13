@@ -1,0 +1,38 @@
+.c-button {
+  display: inline-block;
+  padding: 17px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 7px;
+  position: relative;
+
+  @media (min-width: 768px) and (max-width: 1400px) {
+    font-size: clamp(0.875rem, 0.571rem + 0.63vw, 1.125rem);
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    font-size: 1.4rem;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--color-primary-hover);
+    border: 1px solid var(--color-primary-hover);
+  }
+
+  &:focus {
+    box-shadow: var(--focus);
+  }
+}

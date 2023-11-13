@@ -1,0 +1,19 @@
+.c-br {
+  display: block;
+  
+  &--pc {
+    display: block;
+
+    @media (max-width: 768px) {
+      display: inline;
+    }
+  }
+
+  &--sp {
+    display: inline;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

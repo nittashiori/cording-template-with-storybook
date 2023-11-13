@@ -1,0 +1,17 @@
+.c-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #111111;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+}
